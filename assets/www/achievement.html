@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Achievement Page </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="./jquery.mobile-1.2.1.min.css" />
+	<script src="./jquery-1.8.3.min.js"></script>
+	<script src="./jquery.mobile-1.2.1.min.js"></script>
+	<style>
+		.my-list h5 {
+			font-size: 13px;
+		}
+
+		.my-list h5 span {
+			color: #777;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="choisir_ville" data-role="page" data-add-back-btn="true">
+
+		<div data-role="header">
+			<h1> Achievement</h1>
+		</div>
+
+		<div data-role="content">
+
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<!-- This page is for list all sizes, and it should link to choose_gender.html -->
+				<li class="my-list">
+					<h5><span>Achievement:</span> #1 <a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Build a
+							construction with 2
+							cubes</a>
+					</h5>
+					<h5><span>Reward Lv:</span> 1</h5>
+					<h5><span>Difficulty:</span> D</h5>
+					<h5><span>Completeness:</span> 98%</h5>
+				</li>
+				<li class="my-list">
+					<h5><span>Achievement:</span> #2 <a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Build
+							a construction
+							with 3 cubes</a>
+					</h5>
+					<h5><span>Reward Lv:</span> 1</h5>
+					<h5><span>Difficulty:</span> D</h5>
+					<h5><span>Completeness:</span> 94%</h5>
+				</li>
+				<li class="my-list">
+					<h5><span>Achievement:</span> #3 <a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">Build a
+							construction with 4
+							cubes</a>
+					</h5>
+					<h5><span>Reward Lv:</span> 2</h5>
+					<h5><span>Difficulty:</span> C</h5>
+					<h5><span>Completeness:</span> 85%</h5>
+				</li>
+				<li class="my-list">
+					<h5><span>Achievement:</span> #4 <a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Build
+							a
+							construction with 5 cubes</a>
+					</h5>
+					<h5><span>Reward Lv:</span> 3</h5>
+					<h5><span>Difficulty:</span> C</h5>
+					<h5><span>Completeness:</span> 80%</h5>
+				</li>
+				<li class="my-list">
+					<h5><span>Achievement:</span> #5 <a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Share
+							the game
+							through social media</a>
+					</h5>
+					<h5><span>Reward Lv:</span> 4</h5>
+					<h5><span>Difficulty:</span> D</h5>
+					<h5><span>Completeness:</span> 75%</h5>
+				</li>
+				<li class="my-list">
+					<h5><span>Achievement:</span> #6 <a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Link
+							your facebook
+							account</a></td>
+					</h5>
+					<h5><span>Reward Lv:</span> 3</h5>
+					<h5><span>Difficulty:</span> D</h5>
+					<h5><span>Completeness:</span> 60%</h5>
+				</li>
+				<li class="my-list">
+					<h5><span>Achievement:</span> #7 <a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Achieve Rank 1 in the
+						game</a></td>
+					</h5>
+					<h5><span>Reward Lv:</span> 5</h5>
+					<h5><span>Difficulty:</span> A</h5>
+					<h5><span>Completeness:</span> 2%</h5>
+				</li>
+
+			</ul>
+
+
+			<!-- <table data-role="table" id="table-column-toggle" data-mode="reflow" class="ui-responsive table-stroke">
+				     <thead>
+					       <tr>
+						         <th data-priority="2">Id</th>
+						         <th data-priority="4">Achievement title</th>
+						         <th data-priority="3">Reward Lv</th>
+						         <th data-priority="1">Difficulty</th>
+						         <th data-priority="5">Completeness</th>
+					</tr>
+					     </thead>
+				     <tbody>
+					       <tr>
+						         <th>1</th>
+						         <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Build a construction with 2
+								cubes</a></td>
+						<td>1</td>
+						         <td>D</td>
+						         <td>98%</td>
+						       
+					</tr>
+					       <tr>
+						         <th>2</th>
+						         <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Build a construction
+								with 3 cubes</a></td>
+						 <td>1</td>
+						         <td>D</td>
+						         <td>94%</td>
+						       </tr>
+					       <tr>
+						         <th>3</th>
+						         <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">Build a construction with 4
+								cubes</a></td>
+						         <td>2</td>
+						         <td>C</td>
+						         <td>85%</td>
+						       </tr>
+					       <tr>
+						         <th>4</th>
+						         <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Build a
+								construction with 5 cubes</a></td>
+						         <td>3</td>
+						         <td>C</td>
+						         <td>80%</td>
+						       </tr>
+					       <tr>
+						         <th>5</th>
+						         <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Share the game
+								through social media</a></td>
+						         <td>4</td>
+						         <td>D</td>
+						         <td>75%</td>
+						       </tr>
+					       <tr>
+						         <th>6</th>
+						         <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Link your facebook
+								account</a></td>
+						         <td>3</td>
+						         <td>D</td>
+						         <td>60%</td>
+						       </tr>
+					<tr>
+						<th>7</th>
+						<td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Achieve Rank 1 in the
+								game</a></td>
+						<td>5</td>
+						<td>A</td>
+						<td>2%</td>
+					</tr>
+					       
+					     
+				</tbody>
+				   </table> -->
+			<p>
+				<strong>
+					Note:
+				</strong></br>
+				Reward Level: 5(Highest) - 1 (Lowest)</br>
+				Difficulty : A(Highest) - D (Lowest)</br>
+				Completeness: 100% (Full Completeness)
+			</p>
+			<ul data-role="listview" data-inset="true">
+				<!-- This page is for list all catergories, and it should link to choose_size.html -->
+				<li><a href="homepage.html" data-transition="slidedown">
+						<h3> Back to Homepage</h3>
+					</a></li>
+			</ul>
+
+		</div>
+	</div>
+</body>

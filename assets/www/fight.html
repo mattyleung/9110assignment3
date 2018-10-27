@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	 <meta charset="UTF-8">
+	<title>fight </title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="css/index.css" />
+    <script src="./jquery-1.8.3.min.js"></script>
+	<script src="./jquery.mobile-1.2.1.min.js"></script>
+	<script function move() {
+    var elem = document.getElementById("myBar"); 
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++; 
+            elem.style.width = width + '%'; 
+        }
+    }
+}
+	</script>
+	<style>
+		.fight-content {
+			padding: 0;
+			background-image: url(img/loadding.png);
+			height: 100vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 50% 50%;
+		}
+		.myBar {
+    width: 1%;
+    height: 30px;
+    background-color: grey;
+	}	
+	</style>
+		
+			
+	
+</head> 
+<body> 
+	<div id="choisir_ville" data-role="page" data-add-back-btn="true" data-rel="back">
+	
+	<div data-role="content">
+		<div class="fight-content">
+		
+		<div class="myBar">
+		</div>
+		
+		</div>
+	</div>
+
+	</div><!-- /page -->
+</body>
+</html>

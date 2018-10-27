@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	 <meta charset="UTF-8">
+	<title>register </title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="./jquery.mobile-1.2.1.min.css" />
+    <script src="./jquery-1.8.3.min.js"></script>
+    <script src="./jquery.mobile-1.2.1.min.js"></script>
+    <script src="js/home.js"></script>
+</head> 
+<body> 
+<div id="choisir_ville" data-role="page" data-add-back-btn="true">
+	
+	<div data-role="header"> 
+		<h1> Please complete your information </h1>
+	</div> 
+
+	<div data-role="content">
+	
+	<form>
+     <label for="text-1">First Name</label>
+     <input type="text" name="text-1" id="text-1" value="">
+     <label for="text-3">Last Name</label>
+     <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+	</form>
+	
+	<form>
+     <label for="text-1">Email</label>
+     <input type="text" name="text-1" id="text-1" value="">
+	 <label for="text-3">phone number</label>
+     <input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+	</form>
+	
+	<form action="action_page.php">
+		Date of Birth<br>
+		<input type="date" name="bday" max="1979-12-31">
+	</form>
+	
+	<form>
+        <fieldset data-role="controlgroup">
+        <legend>Gender</legend>
+        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+        <label for="radio-choice-v-2a">Male</label>
+        <input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+        <label for="radio-choice-v-2b">Female</label>	
+    </fieldset>
+	</form>
+
+	<br>
+	<h5> Do you agree with doge policy</h5>	
+	<form>
+		<input type="checkbox" name="checkbox-mini-0" id="checkbox-mini-0" data-mini="true">
+		<label for="checkbox-mini-0">I agree</label><br>
+	</form>
+	<ul data-role="listview" data-inset="true" >
+	<!-- This page is for list all catergories, and it should link to choose_size.html -->
+	<li><a href="info.html" data-transition="slidedown"> <h3> Create My Account</h3></a></li>
+	</ul>	
+</div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Purchase Page </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="apple-touch-icon" href="images/launch_icon_57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/launch_icon_72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/launch_icon_114.png" />
+	<link rel="stylesheet" href="./jquery.mobile-1.2.1.min.css" />
+	<script src="./jquery-1.8.3.min.js"></script>
+	<script src="./jquery.mobile-1.2.1.min.js"></script>
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+	<div id="choisir_ville" data-role="page" data-add-back-btn="true">
+
+		<div data-role="header">
+			<h1> Purchase</h1>
+		</div>
+
+		<div data-role="content">
+			<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+				     <thead>
+					       <tr>
+						         <th data-priority="2">Id</th>
+						         <th>Achievement title</th>
+						         <th data-priority="3">GP</th>
+						         <th data-priority="1"><abbr title="Rotten Tomato Rating">USD</abbr></th>
+						         
+						       </tr>
+					     </thead>
+				     <tbody>
+					       <tr>
+						         <center><th>1</th></center>
+						         <td><a href="method.html">Build a construction with 2 cubes</td></a>
+						         <td>$6</td>
+						         <td>$2.99</td>
+						         
+						       </tr>
+					       <tr>
+						         <th>2</th>
+						         <td><a href="method.html">Build a construction with 3 cubes</a></td>
+						         <td>$10</td>
+						         <td>$4.99</td>
+					</tr>
+					       <tr>
+						         <th>3</th>
+						         <td><a href="method.html" data-rel="external">Build a construction with 4 cubes</a></td>
+						         <td>$15</td>
+						         <td>$8.99</td>
+						       </tr>
+					       <tr>
+						         <th>4</th>
+						         <td><a href="method.html" data-rel="external">Build a construction with 5 cubes</a></td>
+						         <td>$20</td>
+						         <td>$13.99</td>
+						       </tr>
+					       <tr>
+						         <th>5</th>
+						         <td><a href="method.html" data-rel="external">Share the game through social media</a></td>
+						         <td>$1000</td>
+						         <td>$999.99</td>
+						       </tr>
+					       <tr>
+						         <th>6</th>
+						         <td><a href="method.html">Link your facebook account</a></td>
+						         <td>$1000</td>
+						         <td>$999.99</td>
+						       </tr>
+					<tr>
+						<th>7</th>
+						<td><a href="method.html">Achieve Rank 1 in the game</a></td>
+						<td>$5000</td>
+						<td>$1999.99</td>
+					</tr>
+					       
+					     
+				</tbody>
+				   </table>
+			<p>
+				<strong>
+					Note:
+				</strong></br>
+
+				GP = Game point</br>
+				If you wish to purchase the achievement, please click on achievement title.</br>
+			</p>
+			<ul data-role="listview" data-inset="true">
+				<!-- This page is for list all catergories, and it should link to choose_size.html -->
+				<li><a href="homepage.html" data-transition="slidedown">
+						<h3> Back to Homepage</h3>
+					</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
